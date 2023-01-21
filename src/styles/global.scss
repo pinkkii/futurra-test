@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import "./index.scss";
+
+@font-face {
+    font-family: "Proxima-Nova";
+    src: url("../assets/fonts/Proxima-Nova-Font.eot");
+    src: local("☺"), url("../assets/fonts/Proxima-Nova-Font.woff") format("woff"),
+        url("../assets/fonts/Proxima-Nova-Font.ttf") format("truetype"),
+        url("../assets/fonts/Proxima-Nova-Font.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html body {
+    font-family: "Proxima-Nova", sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container-content {
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+html {
+    background: url("../assets/images/BGPlanets.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 992px) {
+    .container-content {
+        max-width: 440px;
+    }
+}
